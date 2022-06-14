@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}
+Accounts
+{% endblock title%}
+{% block content %}
+  {% for post in posts %}
+  <article class="media content-section">
+    <div class="media-body">
+      <div class="article-metadata">
+        <a class="mr-2" >Item</a>
+      </div>
+      <h2><a class="article-title">{{ post.name }}</a></h2>
+      <p class="article-content">{{ post.id }}</p>
+    </div>
+  </article>
+  {% endfor %}
+{% endblock content %}
