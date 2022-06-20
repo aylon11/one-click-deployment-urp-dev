@@ -1,8 +1,15 @@
-# If This Then Ad
+# AccountsFetcher
 
-[![build](https://img.shields.io/badge/build-passing-brightgreen?style=flat&logo=github)](https://github.com/google/if-this-then-ad)
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/google/if-this-then-ad?label=release&logo=github)](https://github.com/google/if-this-then-ad)
-[![GitHub last commit](https://img.shields.io/github/last-commit/google/if-this-then-ad)](https://github.com/google/if-this-then-ad/commits)
+This is a **demo app** to be used as a reference architecture for ads-api based cloud solutions.
+This app deploys on GCP Cloud Run, and creates a web interface to fetch the user's Google Ads accounts.
+
+This repository is intended to be a reference for future cloud based solutions developed in our team.
+
+## Prerequisites
+
+1. [Obtain a Google Ads Developer token](https://developers.google.com/google-ads/api/docs/first-call/dev-token#:~:text=A%20developer%20token%20from%20Google,SETTINGS%20%3E%20SETUP%20%3E%20API%20Center.)
+
+1. Create a GCP project
 
 ## Setup
 
@@ -31,6 +38,17 @@
 1. When deployment finishes, copy the app's URL
 
 1. Go back to your OAuth2 Credentials and add `<YOUR_URL>/oauth2callback` to 'Authorized redirect URIs'
+
+## Login
+
+1. Open your app's URL in the browser
+
+1. Go to 'Login' tab
+
+1. Enter your credentials and sign in with your Google account - Make sure to log-in with a user that has access to your ads account.
+
+1. You are all set! Go to 'Accounts' tab and see a list of all your accounts
+
 
 
 
