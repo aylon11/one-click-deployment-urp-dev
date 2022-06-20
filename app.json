@@ -1,0 +1,15 @@
+{
+  "name": "accounts-fetcher",
+  "env": {},
+  "options": {
+    "allow-unauthenticated": true
+  },
+  "build": {
+    "skip": false
+  },
+  "hooks": {
+    "postcreate": {
+      "commands": ["./setup/api_enable.sh"]
+    }
+  }
+}
