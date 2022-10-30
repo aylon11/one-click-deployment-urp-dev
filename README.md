@@ -36,7 +36,7 @@ ID](https://console.cloud.google.com/apis/credentials/oauthclient)
 1. Click the big blue button to deploy:
 
    [![Run on Google 
-Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run?revision=sso)
+Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
 
 1. Choose the Google Cloud Project where you want to deploy the app
 
