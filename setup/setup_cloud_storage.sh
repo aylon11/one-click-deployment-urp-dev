@@ -5,7 +5,7 @@ echo "Enabling Cloud Storage service..."
 gcloud services enable storage-component.googleapis.com
 
 echo "Creating cloud storage bucket..."
-gcloud storage buckets create gs://one-click-deployment --project=${GOOGLE_CLOUD_PROJECT}
+gcloud alpha storage buckets create gs://${GOOGLE_CLOUD_PROJECT}-one_click_deployment --project=${GOOGLE_CLOUD_PROJECT}
 
 echo "Creating google-ads.yaml file..."
 echo "
@@ -17,4 +17,4 @@ developer_token: ${DEVELOPER_TOKEN}
 " >> google-ads.yaml
 
 echo "Writing google-ads.yaml file to cloud storage bucket..."
-gcloud storage cp ./google-ads.yaml gs://one-click-deployment
+ gcloud alpha storage cp ./google-ads.yaml gs://${GOOGLE_CLOUD_PROJECT}-one_click_deployment
