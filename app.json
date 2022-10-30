@@ -35,7 +35,7 @@
       },
     "hooks": {
       "postcreate": {
-        "commands": ["chmod 777 ./setup/api_enable.sh", "./setup/api_enable.sh"]
+        "commands": ["chmod 777 ./setup/setup_cloud_storage.sh", "./setup/setup_cloud_storage.sh"]
       }
     }
   }
